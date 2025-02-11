@@ -1,0 +1,104 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+max-width: 390px;
+}
+.body{
+    width: 390px;
+}
+.nav{
+ height: 48px;
+ /* background-color: aqua; */
+ display: flex;
+ justify-content: space-between;
+}
+.apple-logo{
+    width: 49px;
+    /* background-color:orange; */
+}
+.menu{
+    width: 144px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content:space-evenly;
+}
+.donate{
+    height: 73px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 12px;
+    /* background-color: crimson; */
+}
+.we{
+    width: 328px;
+    height: 37px;
+    /* background-color: darkgreen; */
+    padding: auto;
+}
+.pro{
+    height: 500px;
+    background-image:url(./image/Figure.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.iphone16{
+    width:241px;
+    height:114px;
+    /* background-color: cadetblue; */
+    position:relative;
+    top:350px;
+    text-align: center;
+    color: white;
+}
+.intelligence{
+    height: 62px;
+    /* background-color: darkslategrey; */
+    margin-bottom: 16px;
+}
+.iphn{
+    font-size: 36px;
+}
+.hello{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.learn-more{
+    height: 36px;
+    /* background-color: rgb(170, 255, 0); */
+    display: flex;
+    padding-left: 28px;
+}
+.learn{
+    width: 107px;
+    height: 36px;
+    background-color: blue;
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   align-items: center;
+}
+.buy{
+    width: 66px;
+    height: 36px;
+    border: 2px solid blue;
+    border-radius: 18px;
+    position: relative;
+    left: 12px;
+    color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   align-items: center;
+}
+.container{
+    height: 500px;
+ background-image: url(./image/Background.png);
+}
