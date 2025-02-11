@@ -41,6 +41,7 @@ max-width: 390px;
 }
 .pro{
     height: 500px;
+    width: 100%;
     background-image:url(./image/Figure.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +63,7 @@ max-width: 390px;
     background-color: darkslategrey;
     margin-bottom: 16px;
 }
-.iphn{
+.intelligence__iphone{
     font-size: 36px;
 }
 .hello{
@@ -101,7 +102,87 @@ max-width: 390px;
 .container2{
  height: 500px;
  background-image: url(./image/Background.png);
+ background-size: cover;
+ background-repeat: no-repeat;
  display: flex;
  justify-content: center;
  margin-bottom: 12px;
+}
+.container2__iphone16{
+    top: 0;
+    margin-top: 36px;
+}
+.container3{
+    height: 500px;
+    background-image: url(./image/Figure22.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container3__iphone16{
+    margin: auto;
+    top: 0;
+    position: relative;
+    top: 36px;
+}
+.heading2{
+position: relative;
+right: 70px;
+}
+.two-size{
+    color: black;
+}
+.container3__apple{
+    width: 166px;
+    height: 18px;
+    background-color: gold;
+    margin: auto;
+    position: relative;
+    margin-top: 350px;
+}
+.container4{
+    height: 500px;
+    background-image: url(./image/Figure\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container4__iphone16{
+    margin: auto;
+    width: 241px;
+    height: 161px;
+    background-color: darkgrey;
+    position: relative;
+    top: 300px;
+}
+.container4__intelligence{
+    height: 109px;
+}
+.container4__airpod{
+    font-size: 18px;
+}
+.container5{
+    height: 500px;
+    background-image: url(./image/pigure5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container5__watch{
+    margin: auto;
+    position: relative;
+    top: 58px;
+}
+.container6{
+    height: 500px;
+    background-image: url(./image/Figure\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container6__iphone16{
+    margin: auto;
+    position: relative;
+    top: 42px;
+
 }
