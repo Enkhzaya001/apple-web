@@ -9,17 +9,17 @@ max-width: 390px;
 }
 .nav{
  height: 48px;
- background-color: aqua;
+ /* background-color: aqua; */
  display: flex;
  justify-content: space-between;
 }
 .apple-logo{
     width: 49px;
-    background-color:orange;
+    /* background-color:orange; */
 }
 .menu{
     width: 144px;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content:space-evenly;
 }
@@ -31,12 +31,12 @@ max-width: 390px;
     align-items: center;
     font-size: 15px;
     margin-bottom: 12px;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 .we{
     width: 328px;
     height: 37px;
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     padding: auto;
 }
 .pro{
@@ -52,15 +52,15 @@ max-width: 390px;
 .iphone16{
     width:241px;
     height:114px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     position:relative;
     top:350px;
     text-align: center;
     color: white;
 }
 .intelligence{
-    height: 62px;
-    background-color: darkslategrey;
+    height: 72px;
+    /* background-color: darkslategrey; */
     margin-bottom: 16px;
 }
 .intelligence__iphone{
@@ -69,10 +69,11 @@ max-width: 390px;
 .hello{
     font-size: 15px;
     margin-top: 5px;
+    opacity: 0.7;
 }
 .learn-more{
     height: 36px;
-    background-color: rgb(170, 255, 0);
+    /* background-color: rgb(170, 255, 0); */
     display: flex;
     padding-left: 28px;
 }
@@ -85,6 +86,8 @@ max-width: 390px;
     text-align: center;
     justify-content: center;
    align-items: center;
+   font-size: 14px;
+   color: white;
 }
 .buy{
     width: 66px;
@@ -98,6 +101,9 @@ max-width: 390px;
     text-align: center;
     justify-content: center;
    align-items: center;
+}
+.container2__buy{
+    color: white;
 }
 .container2{
  height: 500px;
@@ -139,6 +145,9 @@ right: 70px;
     margin: auto;
     position: relative;
     margin-top: 350px;
+    background: linear-gradient(to right, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
 }
 .container4{
     height: 500px;
@@ -151,12 +160,13 @@ right: 70px;
     margin: auto;
     width: 241px;
     height: 161px;
-    background-color: darkgrey;
+    /* background-color: darkgrey; */
     position: relative;
     top: 300px;
 }
 .container4__intelligence{
     height: 109px;
+    text-align: center;
 }
 .container4__airpod{
     font-size: 18px;
@@ -183,6 +193,95 @@ right: 70px;
 .container6__iphone16{
     margin: auto;
     position: relative;
-    top: 42px;
+    top:42px;
+}
+.container7{
+    height: 500px;
+    background-image: url(./image/Figure\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container7__iphone16{
+    width: 257px;
+    height: 168px;
+    text-align: center;
+    color: black;
+}
+.container7__apple{
+    height: 116px;
+    margin-bottom:16px;
+    /* background-color: darkslateblue;    */
+}
+.container7__business{
+    font-size: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.container7__hardware{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.container7__learn{
+    display: flex;
+    justify-content: center;
+}
+.container8{
+    height: 500px;
+    background-image: url(./image/Figure\ \(4\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container8__carrier{
+    width: 314px;
+    height:152px;
+    color: black;
+}
+.container8__deal{
+    font-size: 30px;
+}
+.container8__apple{
+    height: 100px;
+}
+.container8__credit{
+    font-size: 19px;
+    padding-left: 50px;
+    padding-right: 50px;
 
+}
+.container9{
+    height: 500px;
+    background-image: url(./image/Figure\ \(55\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+}
+.container__apple{
+    width:285px;
+    height: 130px;
+    /* background-color: aqua; */
+    text-align: center;
+    margin: auto;
+}
+.container9__credit{
+    height: 40px;
+     /* background-color: #F2416B; */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.container9__estimate{
+    width: 150px;
+    margin: auto;
+} 
+.scroll{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+}
+.image{
+    height: 533px;
 }
