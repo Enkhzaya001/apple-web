@@ -16,15 +16,10 @@ box-sizing: border-box;
  justify-content: space-between;
 }
 .nav__web{
-    display: flex;
     /* background-color: #BA62FC; */
-    justify-content: center;
     display: none;
 }
-.web__menu{
-    display: flex;
-    gap: 24px;
-}
+
 .apple-logo{
     width: 49px;
     /* background-color:orange; */
@@ -82,7 +77,7 @@ box-sizing: border-box;
 .intelligence{
     height: 72px;
     /* background-color: darkslategrey; */
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 .intelligence__iphone{
     font-size: 36px;
@@ -130,7 +125,16 @@ box-sizing: border-box;
  background-image: url(./image/Background.png);
  display: flex;
  justify-content: center;
+ background-position: center;
 }
+.nemelt-zurag{
+    background-image: url(./image/Figure\ \(7\).png);
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
 .container2__iphone16{
     top: 0;
     margin-top: 36px;
@@ -157,14 +161,24 @@ right: 70px;
     background-color: gold;
     margin: auto;
     position: relative;
-    margin-top: 350px;
+    margin-top: 330px;
     background: linear-gradient(to right, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
 }
+.web__airpod{
+    background-image: url(./image/Figure\ \(8\).png);
+    display: none;
+}
 .container4{
     background-image: url(./image/Figure\ \(1\).png);
 }
+ @media only screen and (min-width: 1000px){
+    .web__airpod{
+        display: block;
+        height: 580px;
+    }
+} 
 .container4__iphone16{
     margin: auto;
     width: 241px;
@@ -182,6 +196,12 @@ right: 70px;
 }
 .container5{
     background-image: url(./image/pigure5.png);
+}
+@media only screen and (min-width: 1000px){
+    .container5{
+        background-image: url(./image/Figure\ \(9\).png);
+        height: 580px;
+    }
 }
 .container5__watch{
     margin: auto;
@@ -268,7 +288,7 @@ right: 70px;
     margin: auto;
 } 
 @media only screen and (min-width: 768px){
-    .tablet__repo{
+    .web__hero{
         display: flex;
         flex-wrap: wrap;
         gap: 0 12px;
@@ -300,7 +320,93 @@ right: 70px;
     }
     .container__apple{
         top: 42px;
-    }   
+    }
+}
+@media only screen and (min-width: 1000px){
+    .nav__web{
+        display: block;
+    }
+    .web__menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+    .web__donate{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .nemelt-zurag{
+        display:block;
+        display: flex;
+        justify-content: center;
+    }
+    .gift{
+        width: 405px;
+        height: 164px;
+        /* background-color: #F55600;  */
+        text-align: center;
+        position: relative;
+        top: 300px;
+    }
+    .shop__gifts{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 25px;
+    }
+    .nav{
+        display: none;
+    }
+    .donate{
+        display:none;
+    }
+    .web__hero{
+        display: flex;
+        flex-wrap: wrap;
+        gap:0 12px;
+    }
+    .ipad{
+        width: 49%;
+        height: 580px;
+    }
+    .table{
+        width: 49%;
+        height: 580px;
+    }
+    .web_card{
+        display: block;
+    } 
+    .container4{
+        display: none;
+    }
+    .container7{
+        display: none;
+    }
+    .container8{
+        display: none;
+    }
+}
+.web_card{
+    height: 580px;
+    background-image: url(./image/Figure\ \(10\).png);
+    display: flex;
+    /* display: none; */
+}
+.web__apple{
+    width:322px;
+    height:50px;
+    position: relative;
+    padding: 15px 15px;
+    bottom: 20px;
+    background-color: #F2416B;
 }
 .scroll{
     display: flex;
