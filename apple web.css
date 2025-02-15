@@ -19,7 +19,6 @@ box-sizing: border-box;
     /* background-color: #BA62FC; */
     display: none;
 }
-
 .apple-logo{
     width: 49px;
     /* background-color:orange; */
@@ -176,6 +175,7 @@ right: 70px;
  @media only screen and (min-width: 1000px){
     .web__airpod{
         display: block;
+        background-position: center;
         height: 580px;
     }
 } 
@@ -263,6 +263,7 @@ right: 70px;
     padding-right: 50px;
 
 }
+
 .container9{
     background-image: url(./image/Figure\ \(55\).png);
 }
@@ -285,15 +286,26 @@ right: 70px;
 }
 .container9__estimate{
     width: 150px;
-    margin: auto;
+     margin: auto;
+     position: relative;
+     right: 20px;
 } 
+.web_trade{
+    display: none;
+}
+.web_card{
+    background-image: url(./image/Figure\ \(10\).png);
+    display: none;
+}
+.container11{
+    display: none;
+}
 @media only screen and (min-width: 768px){
     .web__hero{
         display: flex;
         flex-wrap: wrap;
         gap: 0 12px;
     }
-
     .table{
         width: 49%;
     }
@@ -321,6 +333,24 @@ right: 70px;
     .container__apple{
         top: 42px;
     }
+    .container10{
+        display:none;
+    }
+    .container11{
+        display: block;
+    }
+    .tablet__scroll{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        gap: 20px; 
+        /* transition: all 8s linear; */
+    }
+    .tab_img{
+        height: 368px;
+     }
+
 }
 @media only screen and (min-width: 1000px){
     .nav__web{
@@ -377,12 +407,34 @@ right: 70px;
         width: 49%;
         height: 580px;
     }
+    .web__pro2{
+        width: 370px;
+        position: relative;
+        top: 350px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /* background-color: #F2416B; */
+    }
+    .web_learn-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+        right: 20px;
+    }
     .table{
         width: 49%;
         height: 580px;
     }
     .web_card{
         display: block;
+        background-position: center;
+        height: 580px;
+        display: flex;
+        justify-content: center;
     } 
     .container4{
         display: none;
@@ -393,20 +445,63 @@ right: 70px;
     .container8{
         display: none;
     }
-}
-.web_card{
-    height: 580px;
-    background-image: url(./image/Figure\ \(10\).png);
-    display: flex;
-    /* display: none; */
-}
-.web__apple{
-    width:322px;
-    height:50px;
-    position: relative;
-    padding: 15px 15px;
-    bottom: 20px;
-    background-color: #F2416B;
+    .web_trade{
+        display: block;
+        height: 40px;
+     /* background-color: #F2416B; */
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .container9__credit{
+        display: none;
+    }
+    .web_get{
+        width: 322px;
+        height:149px;
+        /* background-color: aquamarine; */
+        position: relative;
+        top: 58px;
+    }
+    .web_purchase{
+        font-size: 18px;
+        padding-left:35px;
+        padding-right:35px;
+        position:relative;
+        left: 25px;
+    }
+    .web_apply{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        /* background-color: coral; */
+    }
+    .buy{
+        width: 112px;
+    }
+    .learn{
+        position: relative;
+        right: 20px;
+    }
+    /* .container10{
+        display:none;
+    } */
+    /* .container11{
+        display: block;
+    } */
+
+    /* .tablet__scroll{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+         gap: 20px; 
+    } */
+    .tab_img{
+        width:1250px;
+        height: 668px;
+    }
+
 }
 .scroll{
     display: flex;
@@ -418,10 +513,40 @@ right: 70px;
 .scroll__image{
     height: 533px;
 }
-.gradient__text{
+.dot{
+    display: flex;
+    margin: auto;
+    margin-top:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    margin-top: 10px;
+    gap: 6px;
+    animation-iteration-count: infinite;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes move{
+    from{
+        transform: translateX(0);     
+    }
+    to {
+        transform: translateX(300px);
+    }
+
+}
+
+
+/* .gradient__text{
     background: linear-gradient(red,yellow,blue,purple);
     width: fit-content;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
+} */
