@@ -261,9 +261,7 @@ right: 70px;
     font-size: 19px;
     padding-left: 50px;
     padding-right: 50px;
-
 }
-
 .container9{
     background-image: url(./image/Figure\ \(55\).png);
 }
@@ -349,6 +347,10 @@ right: 70px;
     }
     .tab_img{
         height: 368px;
+     }
+     .footer{
+        width: 286px;
+        height: 161px;
      }
 
 }
@@ -501,6 +503,10 @@ right: 70px;
         width:1250px;
         height: 668px;
     }
+    .footer{
+        width: 417px;
+        height: 236px;
+    }
 
 }
 .scroll{
@@ -513,14 +519,13 @@ right: 70px;
 .scroll__image{
     height: 533px;
 }
-.dot{
-    display: flex;
-    margin: auto;
-    margin-top:30px;
-    justify-content: center;
-    align-items: center;
+.last{
+   margin:auto;
+   padding-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-
 .footer{
     display: flex;
     margin-top: 10px;
@@ -534,10 +539,10 @@ right: 70px;
 }
 @keyframes move{
     from{
-        transform: translateX(0);     
+        transform: translateX(-400px);     
     }
     to {
-        transform: translateX(300px);
+        transform: translateX(400px);
     }
 
 }

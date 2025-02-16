@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.body{
+    width: 100%;
+}
+.page1{
+    width: 100%;
+    height: 585px;
+    margin-bottom: 60px;
+    /* background-color: aqua; */
+}
+.nav{
+    height: 104px;
+    /* background-color: burlywood; */
+}
+.menu{
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+.Pay{
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+.gradient{
+    height: 25px;
+    background: linear-gradient(90deg,#019FFB, #E44CBB, #F55BE4,#FD8C1F);
+    backdrop-filter: blur(50px);
+}
+.store{
+    height: 100px;
+    background-color: #F55BE4;
+    display:flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content:space-between;
+}
+.gift{
+    height: 52px;
+    font-size: 44px;
+    display: flex;
+    margin-left: 140px;
+    /* background-color: #E44CBB; */
+}
+.gradient_store{
+    background: linear-gradient(90deg, #0090F7 0%, #BA62FC 50%, #F2416B 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right:32px;
+}
+.help{
+    height: 100px;
+    width: 226px;
+    display: flex;
+    /* background-color: cadetblue; */
+    margin-right:140px;
+    gap: 4px;
+}
+.photo{
+    height: 35px;
+    width: 35px;
+}
+.ask{
+    width:175px;
+    height: 100px;
+    margin-left: 16px;
+    /* background-color: #FD8C1F; */
+    display: flex;
+    flex-direction: column;
+}
+.products{
+    height:146px;
+    background-color: #F2416B;
+    display: flex;
+    padding-left:140px;
+    padding-right:140px;
+}
+.product_photo{
+height: 100%;
+width: 136px;
+background-color: bisque;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-left: 12px;
+}
+.Products__font{
+    padding-top: 16px;
+    font-weight: bold;
+}
+.page2{
+ height: 558px;
+ background-color: #d3fc62;
+ padding-left: 140px;
+}
+.title{
+    width:467px;
+    height: 34px;
+    font-size: 24px;
+    display: flex;
+    margin-bottom:24px;
+}
+.gradient_latest{
+ background: linear-gradient(90deg, #0090F7 0%, #BA62FC 50%, #F2416B 100%);
+ -webkit-text-fill-color: transparent;
+ width: fit-content;
+ -webkit-background-clip: text;
+ width: 120px;
+}
+.page2_photo{
+    width: 480px;
+    height: 500px;
+    position: relative;
+}
+.page2_photo1{  
+    border-radius: 18px;
+}
+.version_title{
+    width: 322px;
+    height: 88px;
+    /* background-color: #BA62FC; */
+    position: absolute;
+    top:30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.version_apple{
+    color:#B64400;
+    font-size: 12px;
+}
+.version_iphone{
+    font-size: 26px;
+    font-weight: bold;
+}
+.version_mo{
+    font-size: 18px;
+    opacity: 0.6;
+}
