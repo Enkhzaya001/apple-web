@@ -507,19 +507,37 @@ right: 70px;
         width: 417px;
         height: 236px;
     }
-
+}
+.container10{
+    height: 500px;
+    overflow: hidden;
 }
 .scroll{
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    align-items: center;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
     gap: 20px; 
-    transition: all 8s linear;
+   animation: slide 4s linear infinite;
+   transform: translateX(100%);
 }
 .scroll__image{
-    height: 533px;
+    flex: 0 0 90%;
+    cursor: pointer;
+    scroll-snap-align: center;
 }
-.last{
+.scroll:hover{
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from {
+        text-transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-500%);
+    }
+}
+.last-container{
    margin:auto;
    padding-top: 30px;
    display: flex;
@@ -544,8 +562,11 @@ right: 70px;
     to {
         transform: translateX(400px);
     }
-
 }
+.footer1{
+    display: flex;
+}
+
 
 
 /* .gradient__text{
