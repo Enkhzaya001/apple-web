@@ -303,23 +303,44 @@ right: 70px;
 }
 .footer{
     display: flex;
+    align-items: center;
+    animation: move 4s linear infinite;
     margin-top: 10px;
     gap: 6px;
-    animation-iteration-count: infinite;
+    transform: translateX(100%);
+
+    /* animation-iteration-count: infinite;
     animation-name: move;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-direction:alternate-reverse;
-    /* animation-fill-mode: forwards; */
+    animation-fill-mode: forwards; */
 }
-@keyframes move{
+.footer_image{
+    flex: 0 0 100%;
+    height: 100%;
+    cursor: pointer;
+    scroll-snap-align: center;
+}
+.footer_image:hover{
+    animation-play-state: paused;
+}
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-300%);
+    }
+}
+/* @keyframes move{
     from{
         transform: translateX(-400px);     
     }
     to {
         transform: translateX(400px);
     }
-}
+} */
 @media only screen and (min-width: 768px){
     .web__hero{
         display: flex;
@@ -358,54 +379,59 @@ right: 70px;
     }
     .container11{
         display: block;
-        overflow: hidden;
+        overflow-y: hidden;
     }
     .tablet__scroll{
         height:689px;
         display: flex;
+        overflow-x: scroll;
+        flex-shrink: 0;
         align-items: center;
         gap: 20px; 
-        animation: slide 8s linear infinite;
-        transform: translateX(100%);
+       
     }
     .tab_img{
-     flex: 0 0 100%;
+     display: flex;
      height: 100%;
      cursor: pointer;
      scroll-snap-align: center;
      }
-     .tablet__scroll:hover{
-        animation-play-state: paused;
-    }
-    @keyframes slide {
+    /* @keyframes slide {
         from {
             transform: translateX(100%);
         }
         to {
             transform: translateX(-200%);
         }
-    }
+    } */
      .footer{
         display: none;
      }
      .footer1{
         display: block;
         display: flex;
+        align-items: center;
         margin-top: 10px;
         gap: 6px;
-        animation-iteration-count: infinite;
-        animation-name: move;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-direction:alternate-reverse;
+        animation: move 4s linear infinite;
+        transform: translateX(100%);
     }
     @keyframes move{
         from{
-            transform: translateX(-400px);     
+            transform: translateX(100%px);     
         }
         to {
-            transform: translateX(400px);
+            transform: translateX(-300%);
         }
+    }
+    .footer1_image{
+     flex: 0 0 100%;
+     height: 100%;
+     cursor: pointer;
+     scroll-snap-align: center;
+    }
+    .footer1:hover{
+        animation-play-state: paused;
     }
 
 }
@@ -551,43 +577,26 @@ right: 70px;
         width:1250px;
         height: 668px;
     }
-    .footer{
-        width: 417px;
-        height: 236px;
-    }
 }
 .container10{
     height: 500px;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 .scroll{
    height: 500px;
    display: flex;
    align-items: center;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
+   overflow-x: scroll;
+   flex-shrink: 0;
    gap: 20px; 
    animation: slide 8s linear infinite;
-   transform: translateX(100%);
 }
 .scroll__image{
-    flex: 0 0 90%;
+    display: flex;
     height: 100%;
     cursor: pointer;
     scroll-snap-align: center;
 }
-.scroll:hover{
-    animation-play-state: paused;
-}
-@keyframes slide {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-200%);
-    }
-}
-
 .last-container{
    margin:auto;
    padding-top: 30px;
