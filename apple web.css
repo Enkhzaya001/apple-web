@@ -298,6 +298,28 @@ right: 70px;
 .container11{
     display: none;
 }
+.footer1{
+    display:none;
+}
+.footer{
+    display: flex;
+    margin-top: 10px;
+    gap: 6px;
+    animation-iteration-count: infinite;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes move{
+    from{
+        transform: translateX(-400px);     
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
 @media only screen and (min-width: 768px){
     .web__hero{
         display: flex;
@@ -336,22 +358,55 @@ right: 70px;
     }
     .container11{
         display: block;
+        overflow: hidden;
     }
     .tablet__scroll{
+        height:689px;
         display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
+        align-items: center;
         gap: 20px; 
-        /* transition: all 8s linear; */
+        animation: slide 8s linear infinite;
+        transform: translateX(100%);
     }
     .tab_img{
-        height: 368px;
+     flex: 0 0 100%;
+     height: 100%;
+     cursor: pointer;
+     scroll-snap-align: center;
      }
+     .tablet__scroll:hover{
+        animation-play-state: paused;
+    }
+    @keyframes slide {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-200%);
+        }
+    }
      .footer{
-        width: 286px;
-        height: 161px;
+        display: none;
      }
+     .footer1{
+        display: block;
+        display: flex;
+        margin-top: 10px;
+        gap: 6px;
+        animation-iteration-count: infinite;
+        animation-name: move;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-direction:alternate-reverse;
+    }
+    @keyframes move{
+        from{
+            transform: translateX(-400px);     
+        }
+        to {
+            transform: translateX(400px);
+        }
+    }
 
 }
 @media only screen and (min-width: 1000px){
@@ -486,19 +541,12 @@ right: 70px;
         position: relative;
         right: 20px;
     }
-    /* .container10{
+    .container10{
         display:none;
-    } */
-    /* .container11{
+    } 
+    .container11{
         display: block;
-    } */
-
-    /* .tablet__scroll{
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-         gap: 20px; 
-    } */
+    }
     .tab_img{
         width:1250px;
         height: 668px;
@@ -513,16 +561,18 @@ right: 70px;
     overflow: hidden;
 }
 .scroll{
-    display: flex;
-    align-items: center;
+   height: 500px;
+   display: flex;
+   align-items: center;
     /* overflow-x: scroll;
     overflow-y: hidden; */
-    gap: 20px; 
-   animation: slide 4s linear infinite;
+   gap: 20px; 
+   animation: slide 8s linear infinite;
    transform: translateX(100%);
 }
 .scroll__image{
     flex: 0 0 90%;
+    height: 100%;
     cursor: pointer;
     scroll-snap-align: center;
 }
@@ -531,12 +581,13 @@ right: 70px;
 }
 @keyframes slide {
     from {
-        text-transform: translateX(100%);
+        transform: translateX(100%);
     }
     to {
-        transform: translateX(-500%);
+        transform: translateX(-200%);
     }
 }
+
 .last-container{
    margin:auto;
    padding-top: 30px;
@@ -544,35 +595,4 @@ right: 70px;
    flex-direction: column;
    align-items: center;
 }
-.footer{
-    display: flex;
-    margin-top: 10px;
-    gap: 6px;
-    animation-iteration-count: infinite;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-direction:alternate-reverse;
-    /* animation-fill-mode: forwards; */
-}
-@keyframes move{
-    from{
-        transform: translateX(-400px);     
-    }
-    to {
-        transform: translateX(400px);
-    }
-}
-.footer1{
-    display: flex;
-}
 
-
-
-/* .gradient__text{
-    background: linear-gradient(red,yellow,blue,purple);
-    width: fit-content;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-} */
