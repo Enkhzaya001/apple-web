@@ -4,12 +4,16 @@
     box-sizing: border-box;
     }
 .body{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+.hero{
+    background-color: whitesmoke;
 }
 .page1{
     /* width: 100%; */
     height: 585px;
-    margin-bottom: 60px;
+    /* margin-bottom:60px; */
     padding-left:140px;
     padding-right:140px;
     /* background-color: aqua; */
@@ -45,12 +49,13 @@
     margin-bottom: 80px;
     justify-content:space-between;
 }
+.opacity{
+    opacity: 0.5;
+}
 .gift{
-    width: 655px;
     height: 52px;
     font-size: 44px;
     display: flex;
-    margin-left: 140px;
     /* background-color: #E44CBB; */
 }
 .gradient_store{
@@ -63,8 +68,6 @@
     height: 100px;
     width: 226px;
     display: flex;
-    /* background-color: cadetblue; */
-    margin-right:140px;
     gap: 4px;
 }
 .photo{
@@ -106,9 +109,10 @@ margin-left: 12px;
  /* background-color: #d3fc62; */
  padding-left: 140px;
  padding-right:140px;
+ margin-bottom: 60px;
 }
 .title{
-    width:467px;
+    width:fit-content;
     height: 34px;
     font-size: 24px;
     display: flex;
@@ -164,6 +168,7 @@ margin-left: 12px;
 }
 .page3{
     height: 558px;
+    margin-bottom:60px ;
     padding-left: 140px;
     padding-right:140px;
     /* background-color: #B64400; */
@@ -180,8 +185,8 @@ margin-left: 12px;
     width: 197px;
     height: 66px;
     position: absolute;
-    margin-left: 30px;
-    margin-top: 53px;
+    left: 30px;
+    top: 53px;
     font-size: 26px;
     font-weight: bold;
 }
@@ -189,7 +194,7 @@ margin-left: 12px;
    width: 313px; 
    height: 500px;
    border-radius: 18px;
-   background-color: white;
+   background-color:white;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -202,6 +207,7 @@ margin-left: 12px;
     flex-direction: column;
     align-items: flex-start;
     margin-left:28px;
+    /* background-color: #B64400; */
 }
 .free{
     font-size: 12px;
@@ -211,11 +217,128 @@ margin-left: 12px;
 .Purple{
     font-size:18px;
     font-weight: bold;
-    margin-bottom: 52px;
+    margin-bottom: 42px;
 }
 .price{
  opacity: 0.7;
 }
 .page3_hide{
     visibility: hidden;
+}
+.page3_price{
+position: relative;
+bottom: 20px;
+}
+.page4_make{
+    width: 326px;
+}
+.page4_price{
+    position: relative;
+    top: 20px;
+}
+.page5_make{
+    width: 305px;
+    height: 130px;
+}
+
+.page5_photo{
+    width: 313px;
+    height: 500px;
+}
+.text1{
+    width: 100%;
+    height:240px;
+    margin-bottom: 20px;
+    background-color:white;
+    border-radius:18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text2{
+    background-color:white;
+    border-radius:18px;
+    width: 100%;
+    height:240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page5_create{
+    width: 238px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.page5_create2{
+    width:244px;
+    height: 112px;
+}
+.apple_trade{
+    width: 131px;
+    height: 14px;
+    font-size: 12px;
+    opacity: 0.5;
+    position: absolute;
+    bottom:470px;
+    left: 30px;
+}
+.page6_apple{
+    bottom:150px;
+    left: 10px;
+}
+.page6_include{
+    font-size: 17px;
+    opacity: 0.5;
+    margin-top: 5px;
+}
+.page6_make{
+    color: white;
+}
+.page6_tv{
+    color: white;
+    opacity: 1;
+}
+.page7_opacity{
+    width:620px;
+    height: 34px;
+}
+.page7_title{
+    margin-bottom: 34px;
+}
+.page7_trade{
+    width: 148px;
+    height: 16px;
+}
+.footer{
+    height: 96px;
+    padding-left: 140px;
+    padding-right:140px;
+    margin-bottom: 100px;
+    /* background-color: #019FFB; */
+
+}
+.quick{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.order{
+    width: 125px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius:20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+.footer1{
+    display: flex;
+    gap: 12px;
 }
